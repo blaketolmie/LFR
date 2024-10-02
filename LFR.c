@@ -28,11 +28,14 @@ int8_t readADC(uint8_t channel);	// Read value from ADC channel
 void initMotors(void);				// Initialize motor outputs
 void setMotorSpeed(int8_t leftSpeed, int8_t rightSpeed); // Set motor speeds
 int8_t calculatePID(int8_t error);  // Calculate PID correction
+void init_stat_LEDS (void);         // Initializes Stat LEDs
 void turn_on_LED1 (void);           // Turns on LED 1
 void turn_on_LED2 (void);           // Turns on LED 2
 void turn_on_LED3 (void);           // Turns on LED 3
 
-int main() {
+int main() 
+{
+    init_stat_LEDS();           // Initialize LEDs
 	initADC();					// Initialize ADC
 	initMotors();				// Initialize motors
 
@@ -60,16 +63,19 @@ int main() {
 	return 0;
 }
 
-void initMotors(void) {
+void initMotors(void) 
+{
 	DDRD |= (1 << PIN_PB5) | (1 << PIN_PB6); // Set PD5 and PD6 as output for motor control
 }
 
-void setMotorSpeed(int8_t leftSpeed, int8_t rightSpeed) {
+void setMotorSpeed(int8_t leftSpeed, int8_t rightSpeed) 
+{
 	PIN_PB2 = leftSpeed;				    // Set left motor speed (connected to PB2)
 	PIN_PB1 = rightSpeed;				    // Set right motor speed (connected to PB1)
 }
 
-int8_t calculatePID(int8_t error) {
+int8_t calculatePID(int8_t error) 
+{
 	static int8_t prev_error = 0;	        // Previous error for derivative
 	static int8_t integral = 0;		        // Integral accumulator
 	integral += error;				        // Calculate integral
@@ -79,13 +85,37 @@ int8_t calculatePID(int8_t error) {
 	return pid_output;				        // Return PID correction value
 }
 
+void init_stat_LEDS (void) 
+{
+    DDRD |= (1 << PIN_PD5) | (1 << PIN_PD6) | (1 << PIN_PD7); // Set PD5, PD6 and PD7 as output
+}
+
+void turn_on_LED1 (void)           // Turns on LED 1
+{
+    
+
+}
+void turn_on_LED2 (void)           // Turns on LED 2
+{
+
+}
+
+void turn_on_LED3 (void)           // Turns on LED 3
+{
+
+}
+
+
+
 /* WORK AND PROGRESS DOWN BELOW */
-void initADC(void) {
+void initADC(void) 
+{
 	ADMUX = (1 << REFS0);			// Set reference voltage to AVcc
 	ADCSRA = (1 << ADEN) | (1 << ADPS2) | (1 << ADPS1); // Enable ADC with prescaler of 64
 }
 
-int8_t readADC(uint8_t channel) {
+int8_t readADC(uint8_t channel) 
+{
 	ADMUX = (ADMUX & 0xF8) | (channel & 0x07); // Select the correct ADC channel
 	ADCSRA |= (1 << ADSC);			// Start ADC conversion
 	while (ADCSRA & (1 << ADSC));	// Wait for conversion to complete
