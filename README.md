@@ -1,7 +1,7 @@
 # LFR
 ENMT221 Line Following Robot Software  
 S2 2024  
-[NOTE ON COLLARBORATION](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+[NOTE ON COLLABORATION](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
 ## ATMega328P Microcontroller
 [ATMega328P Datasheet](https://components101.com/microcontrollers/atmega328p-pinout-features-datasheet)  
