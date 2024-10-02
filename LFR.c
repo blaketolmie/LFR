@@ -23,11 +23,14 @@
 #define SETPOINT 255				// Setpoint for the middle sensor (ideally 255)
 
 // Function prototypes
-void initADC();					// Initialize ADC
+void initADC(void);					// Initialize ADC
 int8_t readADC(uint8_t channel);	// Read value from ADC channel
-void initMotors();				// Initialize motor outputs
+void initMotors(void);				// Initialize motor outputs
 void setMotorSpeed(int8_t leftSpeed, int8_t rightSpeed); // Set motor speeds
-int8_t calculatePID(int8_t error); // Calculate PID correction
+int8_t calculatePID(int8_t error);  // Calculate PID correction
+void turn_on_LED1 (void);           // Turns on LED 1
+void turn_on_LED2 (void);           // Turns on LED 2
+void turn_on_LED3 (void);           // Turns on LED 3
 
 int main() {
 	initADC();					// Initialize ADC
