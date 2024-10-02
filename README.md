@@ -10,7 +10,7 @@ ENMT221 Line Following Robot Software
 
 
 ## Programming
-[Arduino Programming](https://docs.arduino.cc/programming/)  
+[Arduino Programming](https://docs.arduino.cc/programming/)
 [MiniCore Tips](https://github.com/MCUdude/MiniCore#how-to-install)
 
 ### Pin macros
