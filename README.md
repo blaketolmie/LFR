@@ -16,7 +16,7 @@ S2 2024
 [Arduino Programming](https://docs.arduino.cc/programming/)  
 [MiniCore Tips](https://github.com/MCUdude/MiniCore#how-to-install)  
 [Embedded C](https://www.learningaboutelectronics.com/EmbeddedC/)  
-
+[AVR](https://github.com/avrdudes/avr-libc)  
 ### Pin macros
 // Use PIN_PB5 macro to refer to pin PB5 (Arduino pin 13)  
 digitalWrite(PIN_PB5, HIGH);
