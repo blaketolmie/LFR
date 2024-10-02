@@ -10,19 +10,19 @@ ENMT221 Line Following Robot Software
 
 
 ## Programming
-[Arduino Programming](https://docs.arduino.cc/programming/)
+[Arduino Programming](https://docs.arduino.cc/programming/)  
 [MiniCore Tips](https://github.com/MCUdude/MiniCore#how-to-install)
 
 ### Pin macros
-// Use PIN_PB5 macro to refer to pin PB5 (Arduino pin 13)
+// Use PIN_PB5 macro to refer to pin PB5 (Arduino pin 13)  
 digitalWrite(PIN_PB5, HIGH);
 
-// Results in the exact same compiled code
+// Results in the exact same compiled code  
 digitalWrite(13, HIGH);
 
 ### Other things of note with MiniCore
-Printf support
-EEPROM option
+Printf support  
+EEPROM option  
 BOD option
 
 
