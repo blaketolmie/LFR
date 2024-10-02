@@ -24,7 +24,7 @@ digitalWrite(13, HIGH);
 
 ### Other things of note with MiniCore
 Printf support  
-EEPROM option  
+EEPROM option (Electrically Erasable Programmable Read-Only Memory)
 BOD option
 
 
