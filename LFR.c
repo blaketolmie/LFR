@@ -65,7 +65,7 @@ int main()
 
 void initMotors(void) 
 {
-	DDRD |= (1 << PIN_PB5) | (1 << PIN_PB6); // Set PD5 and PD6 as output for motor control
+	DDRD |= (1 << PIN_PD5) | (1 << PIN_PD6); // Set PD5 and PD6 as output for motor control
 }
 
 void setMotorSpeed(int8_t leftSpeed, int8_t rightSpeed) 
