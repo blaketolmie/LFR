@@ -1,4 +1,4 @@
-// define pins used on microcontroller
+// define pins used on microcontroller or use predfined ones from Minicore
 
 // reading the sensors (based on hardware - ADC convert 8-bit number from 0 to 255)
 #include <avr/io.h>
