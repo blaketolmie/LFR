@@ -44,22 +44,20 @@ int main() {
 		sensorValues[3] = readADC(SENSOR_4); // Read sensor 4
 		sensorValues[4] = readADC(SENSOR_5); // Read sensor 5
 
-		int8_t error = SETPOINT - sensorValues[2]; // Calculate error
+		int8_t error = SETPOINT - sensorValues[2];  // Calculate error
+		int8_t pid = calculatePID(error);           // Calculate PID value
 
-		int8_t pid = calculatePID(error); // Calculate PID value
-
-		int8_t leftMotorSpeed = 127 + pid; // Adjust left motor speed
+		int8_t leftMotorSpeed = 127 + pid;  // Adjust left motor speed
 		int8_t rightMotorSpeed = 127 - pid; // Adjust right motor speed
 
 		setMotorSpeed(leftMotorSpeed, rightMotorSpeed); // Set motor speeds
-
-		_delay_ms(100);			// Delay for stability
+		_delay_ms(100);			            // Delay for stability
 	}
 
 	return 0;
 }
 
-void initMotors() {
+void initMotors(void) {
 	DDRD |= (1 << PIN_PB5) | (1 << PIN_PB6); // Set PD5 and PD6 as output for motor control
 }
 
@@ -79,18 +77,14 @@ int8_t calculatePID(int8_t error) {
 }
 
 /* WORK AND PROGRESS DOWN BELOW */
-void initADC() {
+void initADC(void) {
 	ADMUX = (1 << REFS0);			// Set reference voltage to AVcc
-
 	ADCSRA = (1 << ADEN) | (1 << ADPS2) | (1 << ADPS1); // Enable ADC with prescaler of 64
 }
 
 int8_t readADC(uint8_t channel) {
 	ADMUX = (ADMUX & 0xF8) | (channel & 0x07); // Select the correct ADC channel
-
 	ADCSRA |= (1 << ADSC);			// Start ADC conversion
-
 	while (ADCSRA & (1 << ADSC));	// Wait for conversion to complete
-
 	return (int8_t)(ADC >> 2);		// Return 8-bit result
 }
