@@ -7,7 +7,7 @@ https://components101.com/microcontrollers/atmega328p-pinout-features-datasheet
 
 ## Downloading the bootloader (using Arduino IDE)
 https://docs.arduino.cc/software/ide/
-[MiniCore] (https://github.com/MCUdude/MiniCore#how-to-install)
+[MiniCore](https://github.com/MCUdude/MiniCore#how-to-install)
 
 
 ## Programming
