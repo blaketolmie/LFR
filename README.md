@@ -1,5 +1,6 @@
 # LFR
-ENMT221 Line Following Robot Software
+ENMT221 Line Following Robot Software  
+S2 2024
 
 ## ATMega328P Microcontroller
 [ATMega328P Datasheet](https://components101.com/microcontrollers/atmega328p-pinout-features-datasheet)
