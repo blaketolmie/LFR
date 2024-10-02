@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/1dcd34ce-a26a-4fc3-a142-9096b09b8416)# LFR
+# LFR
 ENMT221 Line Following Robot Software
 
 
@@ -21,3 +21,4 @@ digitalWrite(13, HIGH);
 
 ![image](https://github.com/user-attachments/assets/babd3863-7e72-451c-a172-6315b0d16bbe)
 
+![image](https://github.com/user-attachments/assets/1dcd34ce-a26a-4fc3-a142-9096b09b8416)
