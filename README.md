@@ -5,12 +5,12 @@ ENMT221 Line Following Robot Software
 [ATMega328P Datasheet](https://components101.com/microcontrollers/atmega328p-pinout-features-datasheet)
 
 ## Downloading the bootloader (using Arduino IDE)
-[Arduino IDE](https://docs.arduino.cc/software/ide/)
+[Arduino IDE](https://docs.arduino.cc/software/ide/)    <br>
 [MiniCore](https://github.com/MCUdude/MiniCore#how-to-install)
 
 
 ## Programming
-[Arduino Programming](https://docs.arduino.cc/programming/)
+[Arduino Programming](https://docs.arduino.cc/programming/)  
 [MiniCore Tips](https://github.com/MCUdude/MiniCore#how-to-install)
 
 ### Pin macros
