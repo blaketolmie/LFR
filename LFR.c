@@ -59,6 +59,26 @@ int main() {
 	return 0;
 }
 
+void initMotors() {
+	DDRD |= (1 << PIN_PB5) | (1 << PIN_PB6); // Set PD5 and PD6 as output for motor control
+}
+
+void setMotorSpeed(int8_t leftSpeed, int8_t rightSpeed) {
+	PIN_PB2 = leftSpeed;				    // Set left motor speed (connected to PB2)
+	PIN_PB1 = rightSpeed;				    // Set right motor speed (connected to PB1)
+}
+
+int8_t calculatePID(int8_t error) {
+	static int8_t prev_error = 0;	        // Previous error for derivative
+	static int8_t integral = 0;		        // Integral accumulator
+	integral += error;				        // Calculate integral
+	int8_t derivative = error - prev_error; // Calculate derivative
+	int8_t pid_output = (Kp * error) + (Ki * integral) + (Kd * derivative); // PID output
+	prev_error = error;				        // Store current error as previous error
+	return pid_output;				        // Return PID correction value
+}
+
+/* WORK AND PROGRESS DOWN BELOW */
 void initADC() {
 	ADMUX = (1 << REFS0);			// Set reference voltage to AVcc
 
@@ -73,28 +93,4 @@ int8_t readADC(uint8_t channel) {
 	while (ADCSRA & (1 << ADSC));	// Wait for conversion to complete
 
 	return (int8_t)(ADC >> 2);		// Return 8-bit result
-}
-
-void initMotors() {
-	DDRD |= (1 << PD5) | (1 << PD6); // Set PD5 and PD6 as output for motor control
-}
-
-void setMotorSpeed(int8_t leftSpeed, int8_t rightSpeed) {
-	OCR0A = leftSpeed;				// Set left motor speed (connected to PD6)
-	OCR0B = rightSpeed;				// Set right motor speed (connected to PD5)
-}
-
-int8_t calculatePID(int8_t error) {
-	static int8_t prev_error = 0;	// Previous error for derivative
-	static int8_t integral = 0;		// Integral accumulator
-
-	integral += error;				// Calculate integral
-
-	int8_t derivative = error - prev_error; // Calculate derivative
-
-	int8_t pid_output = (Kp * error) + (Ki * integral) + (Kd * derivative); // PID output
-
-	prev_error = error;				// Store current error as previous error
-
-	return pid_output;				// Return PID correction value
 }
