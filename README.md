@@ -9,7 +9,7 @@ S2 2024
 
 ## Downloading the bootloader (using Arduino IDE)
 [Arduino IDE](https://docs.arduino.cc/software/ide/)    <br>
-[MiniCore](https://github.com/MCUdude/MiniCore#how-to-install)
+[MiniCore](https://github.com/MCUdude/MiniCore#how-to-install)  
 To burn a bootloader using AVR GCC, the choice of programmer depends on the hardware you have available for interfacing with the microcontroller.  
 Here’s a breakdown of the programmers listed in your image and their common uses:  
   
