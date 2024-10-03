@@ -30,7 +30,7 @@ More
 [Using ATMEL Studios](https://hardwarebee.com/step-by-step-guide-to-microcontroller-programming/#:~:text=What%20is%20microcontroller%20programming?)  
 [tutorial](https://github.com/a5221985/tutorials/blob/master/Embedded_Systems/microcontroller_embedded_c_programming_absolute_beginners.md)  
 [other](https://github.com/aman-goel/avr)  
-
+[ENCE260 Richard Claire Code](https://eng-git.canterbury.ac.nz/rmc84/ence260-ucfk4)  
 ### Pin macros
 // Use PIN_PB5 macro to refer to pin PB5 (Arduino pin 13)  
 digitalWrite(PIN_PB5, HIGH);
