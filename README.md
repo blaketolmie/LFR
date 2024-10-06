@@ -25,7 +25,9 @@ Incorporated
 - Config file - all #defines for pin and globals  
 - Serial communication (println)  
   
-NOTE: Only one reset button (MOTOR_CONTROL) is available since the RESET button is not connect to the microcontroller in the schematic.  
+NOTE:  
+Only one reset button (MOTOR_CONTROL) is available since the RESET button is not connect to the microcontroller in the schematic.  
+If sensors are giving random values - check the height from the ground  
   
  ## ATMega328P Microcontroller
 [ATMega328P Features Datasheet](https://components101.com/microcontrollers/atmega328p-pinout-features-datasheet)  
