@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "microcontroller")(type "KiCad")(uri "C:/Users/Michelle Wang/OneDrive/Desktop/microcontroller.kicad_sym")(options "")(descr ""))
+  (lib (name "MCP6271")(type "KiCad")(uri "C:/Users/Michelle Wang/OneDrive/Desktop/MCP6271.kicad_sym")(options "")(descr ""))
+  (lib (name "SamacSys_Parts")(type "KiCad")(uri "C:/Users/Michelle Wang/Downloads/SamacSys_Parts.kicad_sym")(options "")(descr ""))
+)

@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Diode 1N4004")(type "KiCad")(uri "C:/Users/911BL/Downloads/LFR/Components/Diode 1N4004.kicad_sym")(options "")(descr ""))
+  (lib (name "MOSFET BSR")(type "KiCad")(uri "C:/Users/911BL/Downloads/LFR/Components/MOSFET BSR.kicad_sym")(options "")(descr ""))
+  (lib (name "SamacSys_Parts")(type "Legacy")(uri "${KICAD8_3RD_PARTY}/KiKad Components/SamacSys_Parts.lib")(options "")(descr ""))
+)

@@ -1,0 +1,11 @@
+Changes Sarah 24/0/2024
+
+Made traces for capacitors and crystal oscillator thicker, removed 90 degree angles and odd edges.
+
+Neaten the pcb, made sure traces are spaced evenly apart (reduce stray inductabce)
+
+added more mounting holes just in case we need them
+
+Added more test points at: AVcc TP5, microcontroller motor output TP4, voltage regulator Vin TP6.
+
+Pin out configuration double checked - all correct!
