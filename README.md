@@ -16,10 +16,6 @@ Go to tools and select preferences and burn bootloader
  
 Can now use serial port  
   
-## ATMega328P Microcontroller
-[ATMega328P Features Datasheet](https://components101.com/microcontrollers/atmega328p-pinout-features-datasheet)  
-[ATMega328P Manufacteres Datasheet - register summary on pg8](https://www.jameco.com/Jameco/Products/ProdDS/2139111.pdf) 
-
 ## Arduino_Code
 Incorporated  
 - PID   
@@ -30,4 +26,7 @@ Incorporated
 - Serial communication (println)  
   
 NOTE: Only one reset switch is available since the RESET button is not connect to the microcontroller in the schematic.  
- 
+  
+ ## ATMega328P Microcontroller
+[ATMega328P Features Datasheet](https://components101.com/microcontrollers/atmega328p-pinout-features-datasheet)  
+[ATMega328P Manufacteres Datasheet - register summary on pg8](https://www.jameco.com/Jameco/Products/ProdDS/2139111.pdf) 
