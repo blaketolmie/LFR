@@ -23,11 +23,11 @@ Can now use serial port
 ## Arduino_Code
 Incorporated  
 - PID   
-- Serial communication  
 - LEDs  
 - Sensors  
 - Motors  
 - Config file - all #defines and pin defines
+- Serial communication (println)  
   
 NOTE: Only one reset switch is available since the RESET button is not connect to the microcontroller in the schematic.  
  
