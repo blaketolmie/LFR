@@ -20,7 +20,7 @@ S2 2024
 >**AVRISP mkII:** This is an official programmer from Atmel (now Microchip) designed for use with AVR microcontrollers. It is a reliable choice if you have access to it.  
 >Clock: 9.216 MHz  
 
-## Programming
+## Programming CHANGE TO ARDUINO PROGRAMMING SINCE EASIER / FASTER
 [Arduino Programming](https://docs.arduino.cc/programming/)  
 [MiniCore Tips](https://github.com/MCUdude/MiniCore#how-to-install)  
 [Embedded C](https://www.learningaboutelectronics.com/EmbeddedC/)  
