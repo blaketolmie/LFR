@@ -16,8 +16,9 @@ Go to tools and select preferences and burn bootloader
 Can now use serial port  
   
 ## ATMega328P Microcontroller
-[ATMega328P Datasheet](https://components101.com/microcontrollers/atmega328p-pinout-features-datasheet)  
-[Pinout with ADC pins explained](https://www.learningaboutelectronics.com/Articles/Atmega328-pinout.php#:~:text=Since%20the%20ADC%20for%20the%20Atmega328%20is%20a,value%3B%20thus%2C%20it%20is%20its%20digital%20correspondent%20value.)
-[Full datasheet - register summary on pg8](https://www.jameco.com/Jameco/Products/ProdDS/2139111.pdf)  
+[ATMega328P Features Datasheet](https://components101.com/microcontrollers/atmega328p-pinout-features-datasheet)  
+[ATMega328P Manufacteres Datasheet - register summary on pg8](https://www.jameco.com/Jameco/Products/ProdDS/2139111.pdf)  
+[Pinout with ADC pins explained](https://www.learningaboutelectronics.com/Articles/Atmega328-pinout.php#:~:text=Since%20the%20ADC%20for%20the%20Atmega328%20is%20a,value%3B%20thus%2C%20it%20is%20its%20digital%20correspondent%20value.)  
+
 
  
