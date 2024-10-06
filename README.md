@@ -11,7 +11,8 @@ Go to tools and select preferences and burn bootloader
 >USBasp: This is a popular and inexpensive USB-based programmer for AVR microcontrollers. It's widely used and works well with AVR GCC.  
 >USBtinyISP: Another inexpensive USB programmer. It’s often used with AVR microcontrollers but might be slower than USBasp.  
 >AVRISP mkII: This is an official programmer from Atmel (now Microchip) designed for use with AVR microcontrollers. It is a reliable choice if you have access to it.  
->Clock: 9.216 MHz  
+>Clock: 9.216 MHz
+ 
 Can now use serial port  
   
 ## ATMega328P Microcontroller
