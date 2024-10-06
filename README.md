@@ -24,7 +24,8 @@ S2 2024
 [Arduino Programming](https://docs.arduino.cc/programming/)  
 >Serial.print(): Used to print data to the serial monitor without a newline.  
 >Serial.println(): Used to print data to the serial monitor with a newline.  
->Serial.println("The value is: " + String(value));  
+>Serial.println("The value is: " + String(value));
+
 [MiniCore Tips](https://github.com/MCUdude/MiniCore#how-to-install)  
 [Embedded C](https://www.learningaboutelectronics.com/EmbeddedC/)  
 [AVR](https://github.com/avrdudes/avr-libc)  
