@@ -29,7 +29,7 @@ S2 2024
 [MiniCore Tips](https://github.com/MCUdude/MiniCore#how-to-install)  
 [Embedded C](https://www.learningaboutelectronics.com/EmbeddedC/)  
 [AVR](https://github.com/avrdudes/avr-libc)  
-More  
+**More**  
 [Microcontrollers](https://www.eng.auburn.edu/~nelson/courses/elec3040_3050/C%20programming%20for%20embedded%20system%20applications.pdf#:~:text=C%20programming%20for%20embedded)  
 [Using ATMEL Studios](https://hardwarebee.com/step-by-step-guide-to-microcontroller-programming/#:~:text=What%20is%20microcontroller%20programming?)  
 [tutorial](https://github.com/a5221985/tutorials/blob/master/Embedded_Systems/microcontroller_embedded_c_programming_absolute_beginners.md)  
