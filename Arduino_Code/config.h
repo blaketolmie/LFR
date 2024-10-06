@@ -25,11 +25,11 @@
 
 
 // Define the sensor pins (ADC channels)
-#define SENSOR_1 A1            // Pin 24
-#define SENSOR_2 A2            // Pin 25
-#define SENSOR_3 A3            // Pin 26 (Middle sensor)
-#define SENSOR_4 A4            // Pin 27
-#define SENSOR_5 A5            // Pin 28
+#define SENSOR_1 24
+#define SENSOR_2 25
+#define SENSOR_3 26            // Middle sensor
+#define SENSOR_4 27
+#define SENSOR_5 28
 #define SENSOR_COUNT 5         // Number of sensors
 
 #endif
