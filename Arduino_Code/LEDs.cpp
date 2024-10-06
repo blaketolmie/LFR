@@ -19,3 +19,12 @@ void turnOffLED(int ledNumber) {
     digitalWrite(ledNumber, LOW); 
     Serial.println("LED off");
 }
+
+// Blink the LED
+void blinkLED(,int ledNumber, int interval) {
+    interval = interval * 1000;
+    digitalWrite(ledNumber, HIGH);
+    delay(interval);
+    digitalWrite(ledNumber, LOW);
+    delay(interval);
+}

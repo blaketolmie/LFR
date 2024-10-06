@@ -1,9 +1,8 @@
-#include <Arduino.h>
+#include "config.h"
 #include "Motors.h"
 #include "LEDs.h"
 #include "PID.h"
 #include "Sensors.h"
-#include "config.h"
 
 // Variables to store the previous error and integral value
 int16_t prev_error = 0;
