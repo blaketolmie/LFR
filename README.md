@@ -10,14 +10,15 @@ S2 2024
 ## Downloading the bootloader (using Arduino IDE)
 [Arduino IDE](https://docs.arduino.cc/software/ide/)    <br>
 [MiniCore](https://github.com/MCUdude/MiniCore#how-to-install)  
-   
+
+Using ARDUINO AS ISP since code is in Arduino
 >To burn a bootloader using AVR GCC, the choice of programmer depends on the hardware you have available for interfacing with the microcontroller.  
 >Here’s a breakdown of the programmers listed in your image and their common uses:  
 >  
->Arduino as ISP: If you have an Arduino board, you can use it to program AVR chips by setting it up as an ISP (In-System Programmer). This is a common and cost-effective method.  
->**USBasp:** This is a popular and inexpensive USB-based programmer for AVR microcontrollers. It's widely used and works well with AVR GCC.  
->**USBtinyISP:** Another inexpensive USB programmer. It’s often used with AVR microcontrollers but might be slower than USBasp.  
->**AVRISP mkII:** This is an official programmer from Atmel (now Microchip) designed for use with AVR microcontrollers. It is a reliable choice if you have access to it.  
+>**Arduino as ISP**: If you have an Arduino board, you can use it to program AVR chips by setting it up as an ISP (In-System Programmer). This is a common and cost-effective method.  
+>USBasp: This is a popular and inexpensive USB-based programmer for AVR microcontrollers. It's widely used and works well with AVR GCC.  
+>USBtinyISP: Another inexpensive USB programmer. It’s often used with AVR microcontrollers but might be slower than USBasp.  
+>AVRISP mkII: This is an official programmer from Atmel (now Microchip) designed for use with AVR microcontrollers. It is a reliable choice if you have access to it.  
 >Clock: 9.216 MHz  
 
 ## Programming CHANGE TO ARDUINO PROGRAMMING SINCE EASIER / FASTER
