@@ -11,7 +11,7 @@ S2 2024
 [Arduino IDE](https://docs.arduino.cc/software/ide/)    <br>
 [MiniCore](https://github.com/MCUdude/MiniCore#how-to-install)  
 
-Using ARDUINO AS ISP since code is in Arduino
+Using Arduino as ISP since code is in Arduino
 >To burn a bootloader using AVR GCC, the choice of programmer depends on the hardware you have available for interfacing with the microcontroller.  
 >Here’s a breakdown of the programmers listed in your image and their common uses:  
 >  
