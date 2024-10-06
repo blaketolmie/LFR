@@ -26,7 +26,7 @@ Incorporated
 - LEDs  
 - Sensors  
 - Motors  
-- Config file - all #defines and pin defines
+- Config file - all #defines for pin and globals  
 - Serial communication (println)  
   
 NOTE: Only one reset switch is available since the RESET button is not connect to the microcontroller in the schematic.  
