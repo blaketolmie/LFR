@@ -3,8 +3,8 @@ ENMT221 Line Following Robot Software
 S2 2024  
 
 ## Note on collaboration
-Send me your GitHub username or email so I can grant you collaborater access (so you can make push and pull requests etc)
-
+Send me your GitHub username or email so I can grant you collaborater access (so you can make push and pull requests etc)  
+[GitHub Desktop](https://github.com/apps/desktop)
 ## Set up  
 Download [MiniCore](https://github.com/MCUdude/MiniCore#how-to-install) and make sure its in the correct folder   
 Open [Arduino IDE](https://www.arduino.cc/en/software)  
