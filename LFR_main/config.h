@@ -4,10 +4,10 @@
 #include <Arduino.h>
 
 // PID constants / tuning
-#define float Kp = 2.0;  // Proportional constant
-#define float Ki = 1.0;  // Integral constant
-#define float Kd = 1.0;  // Derivative constant
-#define int16_t INTEGRAL_LIMIT = 100; // Integral windup limit
+const float Kp = 2.0;  // Proportional constant
+const float Ki = 1.0;  // Integral constant
+const float Kd = 1.0;  // Derivative constant
+const int16_t INTEGRAL_LIMIT = 100; // Integral windup limit
 
 // Key constraints
 #define SETPOINT 255             // Setpoint for the middle sensor (ideally 255 or 0 - depending on what you want to sense)
