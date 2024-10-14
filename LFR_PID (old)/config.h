@@ -15,21 +15,21 @@ const int16_t INTEGRAL_LIMIT = 100; // Integral windup limit
 #define MIN_MOTOR_SPEED 0
 
 // Pins
-#define LED_1 11    // LEDs are on pins 11,12,13
-#define LED_2 12
-#define LED_3 13
+#define LED_1 5    // LEDs are on pins 11,12,13
+#define LED_2 6
+#define LED_3 7
 
-#define MOTOR_CONTROL 14
-#define LEFT_MOTOR 15
-#define RIGHT_MOTOR 16
+#define MOTOR_CONTROL 8
+#define LEFT_MOTOR 9
+#define RIGHT_MOTOR 10
 
 
 // Define the sensor pins (ADC channels)
-#define SENSOR_1 24
-#define SENSOR_2 25
-#define SENSOR_3 26            // Middle sensor
-#define SENSOR_4 27
-#define SENSOR_5 28
+#define SENSOR_1 A1
+#define SENSOR_2 A2
+#define SENSOR_3 A3            // Middle sensor
+#define SENSOR_4 A4
+#define SENSOR_5 A5
 #define SENSOR_COUNT 5         // Number of sensors
 
 #endif

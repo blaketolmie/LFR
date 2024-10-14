@@ -7,6 +7,7 @@
 // Variables to store the previous error and integral value
 int16_t prev_error = 0;
 int16_t integral = 0;
+int16_t sensorValues[10];
 
 unsigned long startTime;                        // Variable to store the time when the loop starts
 unsigned long endTime = 60;                     // Run program for 60 seconds - remove at end after testing

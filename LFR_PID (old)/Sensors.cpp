@@ -1,6 +1,6 @@
 #include "Sensors.h"
 
-
+int16_t sensorValues[10];
 // Initialize the sensor pins
 void initSensors() {
     pinMode(SENSOR_1, INPUT);
@@ -15,11 +15,6 @@ void initSensors() {
 // Read sensor values into an array
 void readSensors(int16_t* sensorValues) {
     // Read sensor values from the defined analog pins
-    sensorValues[0] = analogRead(SENSOR_1);
-    sensorValues[1] = analogRead(SENSOR_2);
-    sensorValues[2] = analogRead(SENSOR_3);
-    sensorValues[3] = analogRead(SENSOR_4);
-    sensorValues[4] = analogRead(SENSOR_5);
 
     Serial.println("Sensor 1 is value: " + String(sensorValues[0]));
     Serial.println("Sensor 2 is value: " + String(sensorValues[1]));
