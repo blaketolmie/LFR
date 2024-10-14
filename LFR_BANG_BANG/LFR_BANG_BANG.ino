@@ -9,7 +9,7 @@ int threshold = 100;        // Threshold for bang bang controller
 int speed_up = 150;         // Motor speed fast
 int slow_down = 100;        // Motor speed slow
 int forward = 150;          // Motor speed when forward
-// Ensures the circuit wont get damaged by setting motor values too high
+// Constraining the motor speeds so the circuit wont get damaged by accidentally setting motor values above too high
 constrain(LEFT_MOTOR, MIN_MOTOR_SPEED, MAX_MOTOR_SPEED);    
 constrain(RIGHT_MOTOR, MIN_MOTOR_SPEED, MAX_MOTOR_SPEED);
 
