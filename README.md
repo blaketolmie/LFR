@@ -2,7 +2,7 @@
 ENMT221 Line Following Robot Software  
 S2 2024  
 
-## Note on collaboration
+## Access to Github
 Send me your GitHub username or email so I can grant you collaborater access (so you can make push and pull requests etc)  
 [GitHub Desktop](https://github.com/apps/desktop)
 
