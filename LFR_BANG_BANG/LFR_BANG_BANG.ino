@@ -9,9 +9,6 @@ int threshold = 100;        // Threshold for bang bang controller
 int speed_up = 150;         // Motor speed fast
 int slow_down = 100;        // Motor speed slow
 int forward = 150;          // Motor speed when forward
-// Constraining the motor speeds so the circuit wont get damaged by accidentally setting motor values above too high
-constrain(LEFT_MOTOR, MIN_MOTOR_SPEED, MAX_MOTOR_SPEED);    
-constrain(RIGHT_MOTOR, MIN_MOTOR_SPEED, MAX_MOTOR_SPEED);
 
 void setup() {
     Serial.begin(9600);
@@ -31,26 +28,23 @@ void loop() {
     int leftSensors = (sensor_1 < threshold) || (sensor_2 < threshold);
     int rightSensors = (sensor_3 < threshold) || (sensor_4 < threshold);
 
-    // Bang bang controller
+    // Bang bang controller. Reminder that setMotorSpeed(int16_t leftSpeed, int16_t rightSpeed)
     if (leftSensors && !rightSensors) {
         // If the left group sense the line, turn left by increasing speed of right motor etc
-        analogWrite(LEFT_MOTOR, slow_down);
-        analogWrite(RIGHT_MOTOR, speed_up);
+        setMotorSpeed(slow_down,speed_up);
         turnOnLED(LED_1);
         turnOffLED(LED_2);
         turnOffLED(LED_3);
         
     } else if (rightSensors && !leftSensors) {
         // If the right group sense the line, turn right by increasing speed of left motor etc
-        analogWrite(LEFT_MOTOR, speed_up);
-        analogWrite(RIGHT_MOTOR, slow_down);
+        setMotorSpeed(speed_up,slow_down);
         turnOnLED(LED_2);
         turnOffLED(LED_1);
         turnOffLED(LED_3);
     } else {
         // Else move forward
-        analogWrite(LEFT_MOTOR, forward);
-        analogWrite(RIGHT_MOTOR, forward);
+        setMotorSpeed(forward,forward);
         turnOnLED(LED_3);
         turnOffLED(LED_1);
         turnOffLED(LED_2);
