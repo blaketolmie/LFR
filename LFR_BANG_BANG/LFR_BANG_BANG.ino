@@ -5,10 +5,10 @@
 /* Hold down reset switch to stop motors */ 
 
 // Motor values
-int threshold = 100;        // Threshold for bang bang controller
-int speed_up = 150;         // Motor speed fast
-int slow_down = 100;        // Motor speed slow
-int forward = 150;          // Motor speed when forward
+int16_t threshold = 100;        // Threshold for bang bang controller
+int16_t speed_up = 150;         // Motor speed fast
+int16_t slow_down = 100;        // Motor speed slow
+int16_t forward = 150;          // Motor speed when forward
 
 void setup() {
     Serial.begin(9600);
@@ -25,8 +25,8 @@ void loop() {
     // If adding a 5th sensor make it so then middle sensor just means it goes straight
 
     // Convert ADC values to digital values. Group the sensors into left and right
-    int leftSensors = (sensor_1 < threshold) || (sensor_2 < threshold);
-    int rightSensors = (sensor_3 < threshold) || (sensor_4 < threshold);
+    int16_t leftSensors = (sensor_1 < threshold) || (sensor_2 < threshold);
+    int16_t rightSensors = (sensor_3 < threshold) || (sensor_4 < threshold);
 
     // Bang bang controller. Reminder that setMotorSpeed(int16_t leftSpeed, int16_t rightSpeed)
     if (leftSensors && !rightSensors) {

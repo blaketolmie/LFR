@@ -3,8 +3,8 @@
 
 #include <Arduino.h>
 
-// Key constraints
-#define MAX_MOTOR_SPEED 255     // Motor speed limits
+// Motor speed limits
+#define MAX_MOTOR_SPEED 255     
 #define MIN_MOTOR_SPEED 0
 
 // Pins
