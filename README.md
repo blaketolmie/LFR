@@ -22,7 +22,7 @@ Can now use serial port
   
 ## Arduino_Code
 Incorporated  
-- PID   
+- BANG BANG Controller     
 - LEDs  
 - Sensors  
 - Motors  
