@@ -28,11 +28,16 @@ void setup() {
 }
 
 void loop() {
-    turnOnLED(LED_1);
+    // turnOnLED(LED_1);
     int16_t sensor_1 = analogRead(SENSOR_1);
     int16_t sensor_5 = analogRead(SENSOR_5);
-    
-    if (sensor_1 < threshold) {  // when on line
+    int16_t sensor_3 = analogRead(SENSOR_3);
+
+    if (sensor_3 < threshold) {
+      // forward
+        left_speed = (speed_up-10);
+        right_speed = (speed_up-10);
+    } else if (sensor_1 < threshold) {  // when on line
         // If the left group sense the line, turn left by increasing speed of right motor etc
         left_speed = speed_up;
         right_speed = slow_down;
@@ -46,6 +51,11 @@ void loop() {
 
 
     if (sensor_1 < threshold) {
+      turnOnLED(LED_1);
+    } else {
+      turnOffLED(LED_1);
+    }
+    if (sensor_3 < threshold) {
       turnOnLED(LED_2);
     } else {
       turnOffLED(LED_2);
@@ -55,5 +65,6 @@ void loop() {
     } else {
       turnOffLED(LED_3);
     }
+    
 
 }
