@@ -4,10 +4,8 @@
 #include "Sensors.h"
 
 int16_t threshold = 230;      // Threshold for sensors on main course
-
 int16_t speed_up = 70;        // Motor speeds
 int16_t slow_down = 0;
-
 int16_t forward = 30;
 int16_t left_speed = 65;      // Starting motor speeds
 int16_t right_speed = 65;
