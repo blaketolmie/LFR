@@ -2,69 +2,59 @@
 #include "Motors.h"
 #include "LEDs.h"
 #include "Sensors.h"
-/* Hold down reset switch to stop motors */ 
-/* If lights are flickering must manually start motors */
 
-// Motor values
-int16_t threshold = 230;        // Threshold for bang bang controller 200
-int16_t speed_up = 70;         // Motor speed fast, 55 without weights, 80 good for rectangle with weights, 70 perfect for complex track
+int16_t threshold = 230;      // Threshold for sensors on main course
 
-int16_t slow_down = 0;        // Motor speed slow
-int16_t forward = 30;          // Motor speed when forward
+int16_t speed_up = 70;        // Motor speeds
+int16_t slow_down = 0;
 
-int16_t left_speed = 65; // original 30 then 60
+int16_t forward = 30;
+int16_t left_speed = 65;      // Starting motor speeds
 int16_t right_speed = 65;
 
-// testing
-// int16_t threshold1 = 230;        // Threshold for bang bang controller
-// int16_t threshold5 = 230;
-
-
 void setup() {
-    // Serial.begin(9600);
     initStatLEDs();
     initMotors();
     initSensors();
 }
 
 void loop() {
-    // turnOnLED(LED_1);
+    // Read sensor values
     int16_t sensor_1 = analogRead(SENSOR_1);
-    int16_t sensor_5 = analogRead(SENSOR_5);
     int16_t sensor_3 = analogRead(SENSOR_3);
+    int16_t sensor_5 = analogRead(SENSOR_5);
 
+    // Bang bang controller
     if (sensor_3 < threshold) {
-      // forward
+      // Forward
         left_speed = (speed_up-10);
         right_speed = (speed_up-10);
-    } else if (sensor_1 < threshold) {  // when on line
-        // If the left group sense the line, turn left by increasing speed of right motor etc
+    } else if (sensor_1 < threshold) {
+        // If the left sensor senses the line, turn left by increasing speed of right motor etc
         left_speed = speed_up;
         right_speed = slow_down;
     } else if (sensor_5 < threshold) {
-        // If the right group sense the line, turn right by increasing speed of left motor etc
+        // If the right sensor senses the line, turn right by increasing speed of left motor etc
         left_speed = slow_down;
         right_speed = speed_up;
     }
+
     setMotorSpeed(left_speed,right_speed);
-    // setMotorSpeed(0,speed_up);
 
-
-    if (sensor_1 < threshold) {
+    // LED sensor indicators
+    if (sensor_1 < threshold) {   // sensor 1 sensing line
       turnOnLED(LED_1);
     } else {
       turnOffLED(LED_1);
     }
-    if (sensor_3 < threshold) {
+    if (sensor_3 < threshold) {   // sensor 3 sensing line
       turnOnLED(LED_2);
     } else {
       turnOffLED(LED_2);
     }
-    if (sensor_5 < threshold) {
+    if (sensor_5 < threshold) {   // sensor 5 sensing line
       turnOnLED(LED_3);
     } else {
       turnOffLED(LED_3);
     }
-    
-
 }

@@ -19,10 +19,10 @@
 #define RIGHT_MOTOR 10
 
 // Define the sensor pins (ADC channels)
-#define SENSOR_1 A1
+#define SENSOR_1 A1            // Left sensor
 #define SENSOR_2 A2
 #define SENSOR_3 A3            // Middle sensor
 #define SENSOR_4 A4
-#define SENSOR_5 A5
+#define SENSOR_5 A5            // Right sensor
 
 #endif
