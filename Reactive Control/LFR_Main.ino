@@ -24,7 +24,6 @@ void loop() {
     int16_t sensor_3 = analogRead(SENSOR_3);
     int16_t sensor_5 = analogRead(SENSOR_5);
 
-    // Bang bang controller
     if (sensor_3 < threshold) {
       // Forward
         left_speed = (speed_up-10);
