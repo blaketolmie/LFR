@@ -1,5 +1,5 @@
-# LFR
-ENMT221 Line Following Robot Software  
+# Other sources
+ENMT221 Line Following Robot  
 S2 2024  
 [NOTE ON COLLABORATION](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
@@ -7,19 +7,10 @@ S2 2024
 [ATMega328P Datasheet](https://components101.com/microcontrollers/atmega328p-pinout-features-datasheet)  
 [Pinout with ADC pins explained](https://www.learningaboutelectronics.com/Articles/Atmega328-pinout.php#:~:text=Since%20the%20ADC%20for%20the%20Atmega328%20is%20a,value%3B%20thus%2C%20it%20is%20its%20digital%20correspondent%20value.)
 [Full datasheet - register summary on pg8](https://www.jameco.com/Jameco/Products/ProdDS/2139111.pdf)  
+
 ## Downloading the bootloader (using Arduino IDE)
 [Arduino IDE](https://docs.arduino.cc/software/ide/)    <br>
 [MiniCore](https://github.com/MCUdude/MiniCore#how-to-install)  
-
-Using Arduino as ISP since code is in Arduino
->To burn a bootloader using AVR GCC, the choice of programmer depends on the hardware you have available for interfacing with the microcontroller.  
->Here’s a breakdown of the programmers listed in your image and their common uses:  
->  
->**Arduino as ISP**: If you have an Arduino board, you can use it to program AVR chips by setting it up as an ISP (In-System Programmer). This is a common and cost-effective method.  
->USBasp: This is a popular and inexpensive USB-based programmer for AVR microcontrollers. It's widely used and works well with AVR GCC.  
->USBtinyISP: Another inexpensive USB programmer. It’s often used with AVR microcontrollers but might be slower than USBasp.  
->AVRISP mkII: This is an official programmer from Atmel (now Microchip) designed for use with AVR microcontrollers. It is a reliable choice if you have access to it.  
->Clock: 9.216 MHz  
 
 ## Programming CHANGE TO ARDUINO PROGRAMMING SINCE EASIER / FASTER
 [Arduino Programming](https://docs.arduino.cc/programming/)  
@@ -36,12 +27,6 @@ Using Arduino as ISP since code is in Arduino
 [tutorial](https://github.com/a5221985/tutorials/blob/master/Embedded_Systems/microcontroller_embedded_c_programming_absolute_beginners.md)  
 [other](https://github.com/aman-goel/avr)  
 [ENCE260 Richard Claire Code](https://eng-git.canterbury.ac.nz/rmc84/ence260-ucfk4)  
-### Pin macros
-// Use PIN_PB5 macro to refer to pin PB5 (Arduino pin 13)  
-digitalWrite(PIN_PB5, HIGH);
-
-// Results in the exact same compiled code  
-digitalWrite(13, HIGH);
 
 ### Other things of note with MiniCore
 Printf support  
