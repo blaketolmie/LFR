@@ -37,6 +37,7 @@ Incorporated
 NOTE:  
 Only one reset button (MOTOR_CONTROL) is available since the RESET button is not connect to the microcontroller in the schematic.  
 If sensors are giving random values - check the height from the ground  
+Only 3 sensors ended up working hence no PID or bang bang controller  
   
  ## ATMega328P Microcontroller
 [ATMega328P Features Datasheet](https://components101.com/microcontrollers/atmega328p-pinout-features-datasheet)  
