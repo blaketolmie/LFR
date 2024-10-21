@@ -27,7 +27,7 @@ Go to tools and select preferences and burn bootloader
   
 ## Arduino_Code
 Incorporated  
-- BANG BANG Controller     
+- Reactive control  
 - LEDs  
 - Sensors  
 - Motors  
