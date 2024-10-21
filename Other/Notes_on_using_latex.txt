@@ -1,0 +1,19 @@
+To prevent text from going endlessly to the right in VS Code, you can enable word wrap. Here’s how you can do it:
+Using the Settings Menu:
+Go to File > Preferences > Settings (or press Ctrl + ,).
+In the search bar, type word wrap.
+Set Editor: Word Wrap to on.
+Using the Command Palette:
+Press Ctrl + Shift + P to open the Command Palette.
+Type Toggle Word Wrap and select it.
+Using a Keyboard Shortcut:
+Press Alt + Z (or Option + Z on macOS) to toggle word wrap on and off.
+This will ensure that long lines of text wrap within the editor window, making it easier to read and edit your code.
+
+2 options for doing latex
+- have includes to different sections (preferred)
+- one massive document where you navigate it using the vs code tex extension
+
+Use control s to save document, auto builds pdf. Also text pdf viewer clashes with vscode-pdf so if you turn off vscode-pdf extension it will update / work better
+
+Edit the JSON file so then all the messy files eg .aux go into a folder called aux_dir (make aux_dir folder then edit JSON settings)
